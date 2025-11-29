@@ -1,5 +1,9 @@
 # 🎓 Proyecto Final Integrador - Análisis de Sistemas de Información
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/tu-badge-id/deploy-status)](https://app.netlify.com/sites/as-tfi/deploys)
+
+> **🌐 Demo en vivo:** [https://as-tfi.netlify.app/](https://as-tfi.netlify.app/)
+
 Trabajo Práctico Final Integrador de la materia **Análisis de Sistemas de Información**, centrado en el relevamiento, análisis y propuesta de solución para una organización real.
 
 ## 📋 Sobre el Proyecto
