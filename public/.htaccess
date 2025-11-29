@@ -1,0 +1,19 @@
+# Si usas Apache, coloca este archivo en public/.htaccess
+# Esto evita que las rutas /pdfs/* pasen por React Router
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # No reescribir archivos/directorios que existen físicamente
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # No reescribir rutas que empiezan con /pdfs/
+  RewriteCond %{REQUEST_URI} ^/pdfs/
+  RewriteRule ^ - [L]
+  
+  # Todo lo demás va a index.html (React Router)
+  RewriteRule ^ index.html [L]
+</IfModule>
