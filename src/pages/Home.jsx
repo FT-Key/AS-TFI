@@ -148,8 +148,9 @@ export default function Home() {
                         </h3>
                       </div>
 
+                      {/* Cantidad de documentos */}
                       <div
-                        className="flex items-center gap-2 text-sm mb-4"
+                        className="flex items-center gap-2 text-sm mb-2"
                         style={{ color: "var(--text-tertiary)" }}
                       >
                         <svg
@@ -166,6 +167,27 @@ export default function Home() {
                           />
                         </svg>
                         {etapa.desarrollo.length + 1} documentos
+                      </div>
+
+                      {/* Cantidad de enlaces */}
+                      <div
+                        className="flex items-center gap-2 text-sm mb-4"
+                        style={{ color: "var(--text-tertiary)" }}
+                      >
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 16h-1v-4h-1m1-4h.01M12 18a6 6 0 110-12 6 6 0 010 12z"
+                          />
+                        </svg>
+                        {etapa.enlaces?.length || 0} enlaces
                       </div>
 
                       <div
