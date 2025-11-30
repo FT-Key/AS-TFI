@@ -12,8 +12,15 @@ export default function PdfItem({ nombre, archivo }) {
         boxShadow: "var(--shadow-sm)",
       }}
     >
-      <div className="flex justify-between items-center gap-4">
-        <div className="flex items-center gap-3 flex-1">
+      <div
+        className="
+          flex flex-col sm:flex-row 
+          justify-between items-start sm:items-center 
+          gap-4
+        "
+      >
+        {/* Info PDF */}
+        <div className="flex items-center gap-3 flex-1 w-full">
           <div
             className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
             style={{
@@ -35,9 +42,10 @@ export default function PdfItem({ nombre, archivo }) {
               />
             </svg>
           </div>
-          <div>
+
+          <div className="flex-1 min-w-0">
             <span
-              className="font-semibold text-lg block"
+              className="font-semibold text-lg block truncate"
               style={{ color: "var(--text-primary)" }}
             >
               {nombre}
@@ -51,9 +59,14 @@ export default function PdfItem({ nombre, archivo }) {
           </div>
         </div>
 
+        {/* Button */}
         <Link
           to={`/pdf/${filePath}`}
-          className="px-5 py-2.5 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center gap-2"
+          className="
+            px-5 py-2.5 rounded-lg font-medium transition-all duration-300 
+            hover:scale-105 flex items-center justify-center gap-2
+            w-full sm:w-auto
+          "
           style={{
             backgroundColor: "var(--accent-primary)",
             color: "#ffffff",
