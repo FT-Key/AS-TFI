@@ -53,6 +53,7 @@ export const etapas = [
     descripcion:
       "Modelo de casos de uso completo, diagramas, prototipos y modelado estructurado siguiendo Proceso Unificado.",
     consigna: "/pdfs/etapa3/consigna.pdf",
+
     desarrollo: [
       {
         nombre: "Documento Etapa 3 (Casos de Uso + Diagramas + Modelado)",
@@ -62,7 +63,11 @@ export const etapas = [
 
     enlaces: [
       {
-        nombre: "Prototipo Interactivo v1",
+        nombre: "Prototipo Interactivo v1.0",
+        url: "https://as-prototypes-v1.netlify.app/"
+      },
+      {
+        nombre: "Prototipo Interactivo v2.0",
         url: "https://as-prototypes.netlify.app/"
       }
     ]
