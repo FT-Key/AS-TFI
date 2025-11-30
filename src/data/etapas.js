@@ -87,6 +87,14 @@ export const etapas = [
       {
         nombre: "Documento Final Etapa 4",
         archivo: "/pdfs/etapa4/etapa4.pdf"
+      },
+      {
+        nombre: "Diccionario de Datos v1.0",
+        archivo: "/pdfs/etapa4/diccionario_datos_1.0.pdf"
+      },
+      {
+        nombre: "Diccionario de Datos v2.0 (Actualizado)",
+        archivo: "/pdfs/etapa4/diccionario_datos_2.0.pdf"
       }
     ]
   }
